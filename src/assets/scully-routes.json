@@ -1,20 +1,48 @@
 [
+  { "route": "/" },
+  {
+    "route": "/projects/2021-01-22-projects",
+    "title": "2021-01-22-projects",
+    "description": "blog description",
+    "published": true,
+    "project": "b",
+    "slugs": ["___UNPUBLISHED___kk8vj1nc_36FZXUUVNzm0CN9zw2MVfMcWeNSZrRL9"],
+    "sourceFile": "2021-01-22-projects.md"
+  },
   {
     "route": "/projects/___UNPUBLISHED___kk8vj1nc_36FZXUUVNzm0CN9zw2MVfMcWeNSZrRL9",
     "title": "2021-01-22-projects",
     "description": "blog description",
-    "published": false,
+    "published": true,
+    "project": "b",
     "slugs": ["___UNPUBLISHED___kk8vj1nc_36FZXUUVNzm0CN9zw2MVfMcWeNSZrRL9"],
-    "slug": "___UNPUBLISHED___kk8vj1nc_36FZXUUVNzm0CN9zw2MVfMcWeNSZrRL9",
     "sourceFile": "2021-01-22-projects.md"
+  },
+  {
+    "route": "/projects/fantastic-stuff",
+    "title": "Fantastic Stuff",
+    "description": "blog description",
+    "published": true,
+    "project": "a",
+    "sourceFile": "fantastic-stuff.md"
+  },
+  {
+    "route": "/projects/the-first-post-is-the-deepest",
+    "title": "The First Post is the Deepest",
+    "description": "blog description",
+    "published": true,
+    "project": "c",
+    "slugs": ["___UNPUBLISHED___kk8ycdec_VgQtZnrZFV9BFEbnZbEihawCitLiWz7p"],
+    "sourceFile": "the-first-post-is-the-deepest.md"
   },
   {
     "route": "/projects/___UNPUBLISHED___kk8ycdec_VgQtZnrZFV9BFEbnZbEihawCitLiWz7p",
     "title": "The First Post is the Deepest",
     "description": "blog description",
-    "published": false,
-    "slug": "___UNPUBLISHED___kk8ycdec_VgQtZnrZFV9BFEbnZbEihawCitLiWz7p",
+    "published": true,
+    "project": "c",
+    "slugs": ["___UNPUBLISHED___kk8ycdec_VgQtZnrZFV9BFEbnZbEihawCitLiWz7p"],
     "sourceFile": "the-first-post-is-the-deepest.md"
   },
-  { "route": "/" }
+  { "route": "/projects" }
 ]

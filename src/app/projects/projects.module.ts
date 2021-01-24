@@ -9,3 +9,4 @@ import {ProjectsComponent} from './projects.component';
   imports: [CommonModule, ProjectsRoutingModule, ScullyLibModule],
 })
 export class ProjectsModule {}
+

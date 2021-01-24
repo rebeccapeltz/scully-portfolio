@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import {ProjectsComponent} from './projects.component';
+import { ProjectsComponent } from './projects.component';
 
 const routes: Routes = [
   {
@@ -9,9 +9,16 @@ const routes: Routes = [
     component: ProjectsComponent,
   },
   {
+    path: '',
+    loadChildren: () =>
+      import('../projects-root/projects-root.module').then(
+        (m) => m.ProjectsRootModule
+      ),
+  },
+  {
     path: '**',
     component: ProjectsComponent,
-  }
+  },
 ];
 
 @NgModule({
@@ -19,4 +26,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class ProjectsRoutingModule {}
-

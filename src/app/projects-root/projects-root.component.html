@@ -1,0 +1,15 @@
+<!-- <p>projects-root works!</p> -->
+<h1 class="title-box">Porfolio Projects</h1>
+<div class="portfolio-posts">
+  <ul>
+    <li *ngFor="let project of projects$ | async">
+      <a [routerLink]="project.route">
+        <div class="project-card">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.authors }}</p>
+          <b>{{ project.description }}</b>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
