@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { NavigationComponent } from './navigation/navigation.component';
 
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
+import * as  Cloudinary from 'cloudinary-core';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { NavigationComponent } from './navigation/navigation.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule
+    ScullyLibModule,
+    CloudinaryModule.forRoot(Cloudinary, { cloud_name: 'pictures77'}),
   ],
   providers: [],
   bootstrap: [AppComponent]

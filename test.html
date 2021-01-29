@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-content {
+        font: 100%/1.75 'Merriweather', 'Georgia', serif;
+        font-family: 'Merriweather', 'Georgia', serif;
+        font-weight: 400;
+        font-kerning: normal;
+        font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+        --bg: #fff;
+        --lightBg: #f5f5f5;
+        --textNormal: #181818;
+        --textTitle: #181818;
+        --textLink: #242424;
+        --hr: rgba(3, 2, 2, 0.2);
+        color: var(--textNormal);
+        box-sizing: inherit;
+        background-color: var(--bg);
+        position: absolute;
+        z-index: 10;
+        margin-left: 0;
+        padding: 0 100px;
+        height: 100vh;
+        top: 0;
+        width: 100%;
+      }
+      main {
+        font: 100%/1.75 'Merriweather', 'Georgia', serif;
+        font-family: 'Merriweather', 'Georgia', serif;
+        font-weight: 400;
+        font-kerning: normal;
+        font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+        --bg: #fff;
+        --lightBg: #f5f5f5;
+        --textNormal: #181818;
+        --textTitle: #181818;
+        --textLink: #242424;
+        --hr: rgba(3, 2, 2, 0.2);
+        box-sizing: inherit;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        background-color: #fff;
+        color: #444;
+      }
+      article.list {
+        font: 100%/1.75 'Merriweather', 'Georgia', serif;
+        font-family: 'Merriweather', 'Georgia', serif;
+        font-weight: 400;
+        font-kerning: normal;
+        font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+        --bg: #fff;
+        --lightBg: #f5f5f5;
+        --textNormal: #181818;
+        --textTitle: #181818;
+        --textLink: #242424;
+        --hr: rgba(3, 2, 2, 0.2);
+        color: #444;
+        box-sizing: inherit;
+        display: block;
+        margin-left: 2rem;
+      }
+      footer {
+        font: 100%/1.75 'Merriweather', 'Georgia', serif;
+        font-family: 'Merriweather', 'Georgia', serif;
+        font-weight: 400;
+        font-kerning: normal;
+        font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+        --bg: #fff;
+        --lightBg: #f5f5f5;
+        --textNormal: #181818;
+        --textTitle: #181818;
+        --textLink: #242424;
+        --hr: rgba(3, 2, 2, 0.2);
+        color: var(--textNormal);
+        box-sizing: inherit;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <div class="main-content"></div>
+  <body>
+    <main>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/nuxt-photo-portfolio/" style="box-shadow: none"
+              >Nuxt Photo Portfolio</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">
+            Demo post displaying the various ways of highlighting code in
+            Markdown.
+          </p>
+          <div>
+            <a href="/nuxt-photo-portfolio/" style="box-shadow: none">
+              <img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/nuxt-photo-portfolio"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/virtual-student-id/" style="box-shadow: none"
+              >Virtual Student ID</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">A ton of text to test readability.</p>
+          <div>
+            <a href="/virtual-student-id/" style="box-shadow: none">
+              <img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/virtual-student-id"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/browser-compression/" style="box-shadow: none"
+              >Browser Compression</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div>
+            <a href="/browser-compression/" style="box-shadow: none"
+              ><img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/browser-compress-blog"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/next-interior-design-portfolio/" style="box-shadow: none"
+              >Nuxt Interior Design Portfolio</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">Try click on the link icon.</p>
+          <div>
+            <a href="/next-interior-design-portfolio/" style="box-shadow: none"
+              ><img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/next-interior-design-portfolio"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/positioning-overlay/" style="box-shadow: none"
+              >Overlay Positioning</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">
+            Custom written post descriptions are the way to go... if you're not
+            lazy.
+          </p>
+          <div>
+            <a href="/positioning-overlay/" style="box-shadow: none"
+              ><img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/positioning-overlay-cld"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/upload-screenshot-cld/" style="box-shadow: none"
+              >Front End Upload Screenshot</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">
+            Just about everything you'll need to style in the theme: headings,
+            paragraphs, blockquotes, tables, code blocks, and more.
+          </p>
+          <div>
+            <a href="/upload-screenshot-cld/" style="box-shadow: none"
+              ><img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/upload-screenshot-cld"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article class="list">
+        <header>
+          <h3>
+            <a href="/vue-cld-camera/" style="box-shadow: none"
+              >Browser Camera Cloudinary Upload</a
+            >
+          </h3>
+        </header>
+        <section>
+          <p class="desc">
+            Just about everything you'll need to style in the theme: headings,
+            paragraphs, blockquotes, tables, code blocks, and more.
+          </p>
+          <div>
+            <a href="/vue-cld-camera/" style="box-shadow: none"
+              ><img
+                src="https://res.cloudinary.com/pictures77/image/upload/bo_1px_solid_rgb:242424,c_fit,h_320,r_5,w_320/v1/gatsby-portfolio/vue-cld-camera"
+            /></a>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      Built with <a href="https://www.gatsbyjs.org">Gatsby</a> and
+      <a href="https://www.cloudinary.com" target="_blank" rel="noreferrer"
+        >Cloudinary</a
+      >.
+    </footer>
+  </body>
+</html>

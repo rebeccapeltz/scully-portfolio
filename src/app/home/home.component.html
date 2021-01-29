@@ -1,21 +1,130 @@
-<h1 class="title-box">Welcome to the Blog!</h1>
-<div class="welcome-message">
-  <p>Glad to have you here ٩(^ᴗ^)۶ !</p>
-  <p>
-    This project is a demo of how to create a
-    <a href="https://jamstack.org">Jamstack</a> blog using Angular,
-    <a href="http://scullyio.com/">Scully</a>, and
-    <a
-      href="https://www.netlify.com/?utm_source=demo&utm_medium=angular-jamstack-blog-tzm&utm_campaign=devex"
-      >Netlify</a
-    >. You can find the code in the
-    <a href="https://github.com/tzmanics/angular-jamstack-blog"
-      >project repo here</a
+<!-- <h1 class="title-box">Welcome to the Blog!</h1> -->
+<main>
+  <div class="container mx-auto px-5">
+    <section
+      class="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12"
     >
-    and learn about the process in
-    <a
-      href="https://www.netlify.app/blog/2020/07/08/creating-an-angular-jamstack-blog/?utm_source=blog&utm_medium=angular-jamstack-blog-tzm&utm_campaign=devex"
-      >this blog post</a
-    >.
-  </p>
-</div>
+      <h1
+        class="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8"
+      >
+        App Developer.
+      </h1>
+      <h4 class="text-center md:text-left text-lg mt-5 md:pl-8">
+        A statically generated portfolio web site using
+        <!-- -->
+        <a
+          href="https://scully.io/"
+          class="underline hover:text-success duration-200 transition-colors"
+          >Scully</a
+        >
+        <!-- -->
+        and
+        <!-- -->
+        <a
+          href="https://www.cloudinary.com/"
+          class="underline hover:text-success duration-200 transition-colors"
+          >Cloudinary</a
+        >
+        <!-- -->.
+      </h4>
+    </section>
+
+    <section>
+      <div
+        class="md:grid md:grid-cols-1 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28"
+      >
+        <div *ngFor="let project of mainProjects$ | async">
+          <div class="mb-5">
+            <div class="sm:mx-0">
+              <a [routerLink]="project.route" aria-label="aria label">
+                <cl-image
+                  width="2000"
+                  height="1000"
+                  crop="fill"
+                  fetch_format="auto"
+                  gravity="auto"
+                  public-id="{{ project.cldPublicId }}"
+                >
+                </cl-image
+              ></a>
+            </div>
+          </div>
+
+          <h3 class="text-3xl mb-3 leading-snug">
+            <a
+              class="hover:underline"
+              [routerLink]="project.route"
+              aria-label="aria label"
+              >{{ project.title }}</a
+            >
+          </h3>
+          <div class="mb-4 md:mb-0 text-lg">
+            <p>{{ project.tagline }}</p>
+          </div>
+
+          <div>
+            <p class="text-lg leading-relaxed mb-4">
+              {{ project.excerpt }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section>
+      <h2
+        class="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight"
+      >
+        More Projects
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32"
+      >
+        <div *ngFor="let project of projects$ | async">
+          <div class="mb-5">
+            <div class="sm:mx-0">
+              <a [routerLink]="project.route" aria-label="aria label">
+                <cl-image
+                  width="2000"
+                  height="1000"
+                  crop="fill"
+                  fetch_format="auto"
+                  gravity="auto"
+                  public-id="{{ project.cldPublicId }}"
+                >
+                </cl-image
+              ></a>
+            </div>
+          </div>
+          <h3 class="text-3xl mb-3 leading-snug">
+            <a
+              class="hover:underline"
+              [routerLink]="project.route"
+              aria-label="aria label"
+              >{{ project.title }}</a
+            >
+
+            <!-- <a class="hover:underline" href="/posts/4kitchen">Kitchen</a> -->
+          </h3>
+          <div class="text-lg mb-4">
+            <p>{{ project.tagline }}</p>
+          </div>
+          <p class="text-lg leading-relaxed mb-4">
+            {{ project.excerpt }}
+          </p>
+          <!-- <div class="flex items-center">
+            <img
+              width="150"
+              height="150"
+              src="https://res.cloudinary.com/pictures77/image/upload/c_fill,f_auto,g_auto,h_150,w_150/v1/nextjs-portfolio/designer4"
+              class="w-12 h-12 rounded-full mr-4"
+              alt="John Haddad"
+            />
+            <div class="text-xl font-bold">John Haddad</div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+

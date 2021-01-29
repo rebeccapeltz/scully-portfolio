@@ -85,10 +85,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/global.css"
             ],
             "styles": [
-              "src/styles.css"
+         
             ],
             "scripts": []
           }
